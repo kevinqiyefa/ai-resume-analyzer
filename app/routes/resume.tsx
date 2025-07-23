@@ -1,7 +1,8 @@
 import {Link, useNavigate, useParams} from "react-router";
 import {useEffect, useState} from "react";
 import {usePuterStore} from "~/lib/puter";
-
+import Summary from "~/components/Summary";
+import ATS from "~/components/ATS";
 
 export const meta = () => ([
     { title: 'Resumind | Review ' },
@@ -73,7 +74,8 @@ const Resume = () => {
                     <h2 className="text-4xl !text-black font-bold">Resume Review</h2>
                     {feedback ? (
                         <div className="flex flex-col gap-8 animate-in fade-in duration-1000">
-                            {/* TODO: Add feedback */}
+                            <Summary feedback={feedback} />
+                            <ATS score={feedback.ATS.score || 0} suggestions={feedback.ATS.tips || []} />
                         </div>
                     ) : (
                         <img src="/images/resume-scan-2.gif" className="w-full" />
