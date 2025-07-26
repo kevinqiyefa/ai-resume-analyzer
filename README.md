@@ -53,4 +53,4 @@ Build an AI-powered Resume Analyzer with React, React Router, and Puter.js! Impl
 
 
 ## <a name="production">🚀 Production URL</a>
-**🔗 Live:** [https://puter.com/app/kevin-ai-resume-analyzer](https://puter.com/app/kevin-ai-resume-analyzer)
+**🔗 Live:** [https://kevin-ai-resume-analyzer.vercel.app](https://kevin-ai-resume-analyzer.vercel.app)
